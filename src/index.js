@@ -18,6 +18,7 @@ const createWindow = () => {
     width: 600,
     height: 580,
     frame: false,
+    titleBarStyle: 'hiddenInset',
     webPreferences: {
       nodeIntegration: true,
     },
