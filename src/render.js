@@ -111,9 +111,9 @@ const updateOutput = (file) => {
 
     for (let i = 0; i < files.length; i++) {
         if (output === undefined) {
-            output = `<li>${path.basename(file)} ==> ${path.basename(file).replace("HEIC", "jpg")}</li>`
+            output = `<li>${path.basename(file)} ==> ${file.replace("HEIC", "jpg")}</li>`
         } else {
-            output = output + `<li>${path.basename(file)} ==> ${path.basename(file).replace("HEIC", "jpg")}</li>`
+            output = output + `<li>${path.basename(file)} ==> ${file.replace("HEIC", "jpg")}${file}</li>`
         }
     }
 

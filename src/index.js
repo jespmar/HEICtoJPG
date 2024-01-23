@@ -15,10 +15,10 @@ let mainWindow;
 const createWindow = () => {
   // Create the browser window.
   mainWindow = new BrowserWindow({
-    width: 600,
-    height: 580,
-    frame: false,
-    titleBarStyle: 'hiddenInset',
+    width: 700,
+    height: 680,
+    //frame: false,
+    //titleBarStyle: 'hiddenInset',
     webPreferences: {
       nodeIntegration: true,
     },

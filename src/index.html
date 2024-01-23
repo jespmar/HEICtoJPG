@@ -1,65 +1,45 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <title>HEIC to JPG converter</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
   <script>
     require('./render.js')
   </script>
-  <style>
-    h1 {
-      font-family: 'Sriracha', cursive;
-    }
-  </style>
 </head>
 
 <body style="-webkit-app-region: drag">
-
-  <section class="hero is-medium is-primary is-bold">
-    <div class="hero-body">
-      <div class="container">
-        <h1 class="title">
-          This might be the best HEIC to JPG converter in the world
+  <section class="p-5">
+    <div class="">
+      <div class="">
+        <h1 class="text-4xl mb-2 font-bold">
+          HEIC to JPG Converter
         </h1>
-        <h2 class="subtitle">
-          I haven't tried that many but I'm pretty confident anyway!
+        <h2 class="text-sm">
+          Use this tool when you want to honvert .HEIC-files to .JPG - Click the button bellow and select one or more .HEIC files. The convertion will start automatically.
         </h2>
       </div>
     </div>
-    <div class="container is-fluid">
+    <div class="mt-5">
       <div class="columns">
         <div class="column">
-          <button style="-webkit-app-region: no-drag;" class="button is-dark" id="select">Select Files</button>
+          <button style="-webkit-app-region: no-drag;" class="bg-gray-800 text-white p-2 rounded-lg mb-3" id="select">Select The Files You want to convert</button>
         </div>
       </div>
       <div class="columns">
         <div class="column">
-          <div class="box" id="startedField"></div>
+          <div class="mb-3" id="startedField"></div>
         </div>
       </div>
       <div style="margin-bottom: 50px;" class="columns">
         <div class="column">
-          <div class="box" id="outputField"></div>
+          <div class="font-mono bg-gray-800 text-gray-50 rounded-lg p-3 text-sm" id="outputField"></div>
         </div>
       </div>
     </div>
   </section>
-  <section class="hero is-dark">
-    <div class="hero-body">
-      <div class="container">
-        <h1 class="title">
-          Developed by me
-        </h1>
-        <h2 class="subtitle">
-          You know who I am!
-        </h2>
-      </div>
-    </div>
-  </section>
-
 
 </body>
 
